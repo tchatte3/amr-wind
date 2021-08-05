@@ -1,0 +1,10 @@
+libdir=/gpfs/alpine/cfd142/proj-shared/tanmoy/codes/amr-wind-tinyprof/lib64
+includedir=/gpfs/alpine/cfd142/proj-shared/tanmoy/codes/amr-wind-tinyprof/include
+
+Name: gmock_main
+Description: GoogleMock (with main() function)
+Version: 1.10.0
+URL: https://github.com/google/googletest
+Requires: gmock = 1.10.0
+Libs: -L${libdir} -lgmock_main -pthread
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1

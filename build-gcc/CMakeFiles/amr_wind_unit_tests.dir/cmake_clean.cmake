@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/amr_wind_unit_tests.dir/cmake_device_link.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/aw_test_utils/AmrTestMesh.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/aw_test_utils/MeshTest.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/aw_test_utils/pp_utils.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/core/physics_test_utils.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/core/test_field.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/core/test_field_ops.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/core/test_physics.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/core/test_simtime.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/core/vs/test_vspace.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/equation_systems/test_pde.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/fvm/test_fvm_curvature.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/fvm/test_fvm_operators.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/fvm/test_fvm_ops.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/test_config.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/turbulence/test_turbulence_init.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utest_main.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utilities/test_field_plane_averaging.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utilities/test_linear_interpolation.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utilities/test_ncutils.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utilities/test_plane_averaging.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utilities/test_refinement.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utilities/test_sampling.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/utilities/test_second_moment.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/abl_test_utils.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/actuator/test_actuator_flat_plate.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/actuator/test_actuator_free_functions.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/actuator/test_actuator_sampling.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/actuator/test_airfoil.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/actuator/test_disk_uniform_ct.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/actuator/test_fast_iface.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/actuator/test_turbine_fast.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/test_abl_init.cpp.o"
+  "CMakeFiles/amr_wind_unit_tests.dir/unit_tests/wind_energy/test_abl_src.cpp.o"
+  "amr_wind_unit_tests"
+  "amr_wind_unit_tests.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CUDA)
+  include(CMakeFiles/amr_wind_unit_tests.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

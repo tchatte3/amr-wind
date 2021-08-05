@@ -1,0 +1,86 @@
+cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=/gpfs/alpine/cfd142/proj-shared/tanmoy/codes/amr-wind-tinyprof -DAMR_WIND_ENABLE_CUDA=ON -DAMReX_CUDA_ARCH=Volta -DAMR_WIND_ENABLE_MPI:BOOL=ON -DAMR_WIND_ENABLE_OPENMP:BOOL=OFF -DAMR_WIND_ENABLE_NETCDF:BOOL=ON -DNETCDF_DIR:PATH=/autofs/nccs-svm1_proj/cfd142/exawind/exawind-2020-07/spack/opt/spack/linux-rhel7-power9le/gcc-7.4.0/netcdf-c-4.7.3-toy5urxedl22tu7qpd3f7hq54n233sbd -DAMR_WIND_ENABLE_MASA:BOOL=OFF -DMASA_DIR:PATH= -DAMR_WIND_ENABLE_HYPRE=ON -DHYPRE_ROOT=/autofs/nccs-svm1_proj/cfd142/exawind/exawind-2020-07/spack/opt/spack/linux-rhel7-power9le/gcc-7.4.0/hypre-develop-ydklha66jpcx2pnabc7dswv4ikrz67mo -DAMR_WIND_ENABLE_OPENFAST=ON -DOpenFAST_ROOT=/ccs/proj/cfd142/exawind/exawind-2020-07/install/gcc/openfast -DAMR_WIND_ENABLE_ALL_WARNINGS:BOOL=ON -DAMR_WIND_ENABLE_FCOMPARE:BOOL=ON -DAMR_WIND_ENABLE_TESTS:BOOL=ON -DAMR_WIND_TEST_WITH_FCOMPARE:BOOL=ON -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON -DAMR_WIND_USE_INTERNAL_AMREX=ON -DMPIEXEC_EXECUTABLE="$(which jsrun) ${jsrun_args}" -DMPIEXEC_NUMPROC_FLAG=-n -DMPIEXEC_PREFLAGS="-a 1 -c 1 -g 1" ..
+-- The CXX compiler identification is GNU 7.4.0
+-- The C compiler identification is GNU 7.4.0
+-- Check for working CXX compiler: /sw/summit/gcc/7.4.0/bin/g++
+-- Check for working CXX compiler: /sw/summit/gcc/7.4.0/bin/g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /sw/summit/gcc/7.4.0/bin/gcc
+-- Check for working C compiler: /sw/summit/gcc/7.4.0/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CUDA compiler identification is NVIDIA 10.2.89
+-- Check for working CUDA compiler: /sw/summit/cuda/10.2.89/bin/nvcc
+-- Check for working CUDA compiler: /sw/summit/cuda/10.2.89/bin/nvcc -- works
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- The Fortran compiler identification is GNU 7.4.0
+-- Check for working Fortran compiler: /sw/summit/gcc/7.4.0/bin/gfortran
+-- Check for working Fortran compiler: /sw/summit/gcc/7.4.0/bin/gfortran  -- works
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Checking whether /sw/summit/gcc/7.4.0/bin/gfortran supports Fortran 90
+-- Checking whether /sw/summit/gcc/7.4.0/bin/gfortran supports Fortran 90 -- yes
+-- Enabled CUDA options:
+--    AMReX_CUDA_FASTMATH
+--    AMReX_CUDA_MAX_THREADS = 256
+--    AMReX_CUDA_MAXREGCOUNT = 255
+-- CMake version: 3.15.2
+-- AMReX installation directory: /gpfs/alpine/cfd142/proj-shared/tanmoy/codes/amr-wind-tinyprof
+-- Build type set by user to 'RELEASE'.
+-- Building AMReX with AMReX_SPACEDIM = 3
+-- Configuring AMReX with the following options enabled: 
+--    AMReX_PRECISION = DOUBLE
+--    AMReX_GPU_BACKEND = CUDA
+--    AMReX_MPI
+--    AMReX_LINEAR_SOLVERS
+--    AMReX_PARTICLES
+--    AMReX_PARTICLES_PRECISION = DOUBLE
+--    AMReX_HYPRE
+--    AMReX_PIC
+--    AMReX_TINY_PROFILE
+--    AMReX_PROBINIT
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Found MPI_C: /autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-7.4.0/spectrum-mpi-10.3.1.2-20200121-eu2wh5ypz6ipvokwbng2m5ihug6doysh/lib/libmpiprofilesupport.so (found version "3.1") 
+-- Found MPI_CXX: /autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-7.4.0/spectrum-mpi-10.3.1.2-20200121-eu2wh5ypz6ipvokwbng2m5ihug6doysh/lib/libmpiprofilesupport.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1") found components:  C CXX 
+-- Found HYPRE: /autofs/nccs-svm1_proj/cfd142/exawind/exawind-2020-07/spack/opt/spack/linux-rhel7-power9le/gcc-7.4.0/hypre-develop-ydklha66jpcx2pnabc7dswv4ikrz67mo/lib/libHYPRE.so (found suitable version "2.19.0", minimum required is "2.19.0") 
+-- AMReX configuration summary: 
+--    Build type               = RELEASE
+--    Install directory        = /gpfs/alpine/cfd142/proj-shared/tanmoy/codes/amr-wind-tinyprof
+--    C++ compiler             = /sw/summit/gcc/7.4.0/bin/g++
+--    Fortran compiler         = /sw/summit/gcc/7.4.0/bin/gfortran
+--    CUDA compiler            = /sw/summit/cuda/10.2.89/bin/nvcc
+--    C++ defines              = 
+--    Fortran defines          = 
+--    C++ flags                = -O3 -DNDEBUG  -pthread
+--    Fortran flags            = -O3 -DNDEBUG -O3  -pthread
+--    CUDA flags               = -O3 -DNDEBUG  -m64 --expt-relaxed-constexpr --expt-extended-lambda -Wno-deprecated-gpu-targets -gencode=arch=compute_70,code=sm_70 -maxrregcount=255 -Xcudafe --diag_suppress=esa_on_defaulted_function_ignored --use_fast_math -Xcudafe --display_error_number --forward-unknown-to-host-compiler
+--    C++ include paths        = -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/build-gcc/submods/amrex/mod_files -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Base -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Boundary -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/AmrCore -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/LinearSolvers/MLMG -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/LinearSolvers/Projections -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Particle -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Extern/HYPRE -I/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-7.4.0/spectrum-mpi-10.3.1.2-20200121-eu2wh5ypz6ipvokwbng2m5ihug6doysh/include -I/autofs/nccs-svm1_proj/cfd142/exawind/exawind-2020-07/spack/opt/spack/linux-rhel7-power9le/gcc-7.4.0/hypre-develop-ydklha66jpcx2pnabc7dswv4ikrz67mo/include
+--    Fortran include paths    = -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/build-gcc/submods/amrex/mod_files -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Base -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Boundary -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/AmrCore -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/LinearSolvers/MLMG -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/LinearSolvers/Projections -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Particle -I/gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/submods/amrex/Src/Extern/HYPRE -I/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-7.4.0/spectrum-mpi-10.3.1.2-20200121-eu2wh5ypz6ipvokwbng2m5ihug6doysh/include -I/autofs/nccs-svm1_proj/cfd142/exawind/exawind-2020-07/spack/opt/spack/linux-rhel7-power9le/gcc-7.4.0/hypre-develop-ydklha66jpcx2pnabc7dswv4ikrz67mo/include
+--    Link line                = -pthread /autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-7.4.0/spectrum-mpi-10.3.1.2-20200121-eu2wh5ypz6ipvokwbng2m5ihug6doysh/lib/libmpiprofilesupport.so /autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-7.4.0/spectrum-mpi-10.3.1.2-20200121-eu2wh5ypz6ipvokwbng2m5ihug6doysh/lib/libmpi_ibm.so /sw/summit/cuda/10.2.89/targets/ppc64le-linux/lib/libnvToolsExt.so
+-- Found MPI_Fortran: /autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-7.4.0/spectrum-mpi-10.3.1.2-20200121-eu2wh5ypz6ipvokwbng2m5ihug6doysh/lib/libmpiprofilesupport.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- AMR-Wind Information:
+-- CMAKE_SYSTEM_NAME = Linux
+-- CMAKE_CXX_COMPILER_ID = GNU
+-- CMAKE_CXX_COMPILER_VERSION = 7.4.0
+-- CMAKE_BUILD_TYPE = RELEASE
+-- Found NetCDF = /autofs/nccs-svm1_proj/cfd142/exawind/exawind-2020-07/spack/opt/spack/linux-rhel7-power9le/gcc-7.4.0/netcdf-c-4.7.3-toy5urxedl22tu7qpd3f7hq54n233sbd
+-- Found OpenFAST = 
+-- Found Git: /autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/git-2.20.1-6zhngdgjqjq4qhp5lxfz6czu3qc2b5lh/bin/git (found version "2.20.1") 
+-- Found Python: /usr/bin/python2.7 (found version "2.7.5") found components:  Interpreter 
+-- Test golds directory for fcompare: /gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/test/AMR-WindGoldFiles/Linux/GNU/7.4.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /gpfs/alpine/cfd142/scratch/tchatte3/codes_rebase/amr-wind/build-gcc
