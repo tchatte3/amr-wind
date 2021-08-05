@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbuildInfoamrwind_obj.a  CMakeFiles/buildInfoamrwind_obj.dir/__/amrwind_obj/AMReX_buildInfo.cpp.o
-/usr/bin/ranlib libbuildInfoamrwind_obj.a
